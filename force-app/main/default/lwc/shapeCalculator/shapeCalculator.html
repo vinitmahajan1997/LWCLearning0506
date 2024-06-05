@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Shape Calculator">
+        <lightning-layout>
+            <lightning-layout-item>
+                <lightning-input label="Enter the side for square " onchange={setSquareSide} size =12></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <lightning-input label="Enter the width of rectangle" onchange={setWidthOfRectangle} size =12></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <lightning-input label="Enter the hight of rectangle" onchange={setHightOfRectangle} size =12></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <lightning-button label="Square" onclick={calculateAreaOfSquare} size =12></lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <lightning-button label="Rectangle" onclick={calculateAreaOfRectangle} size =12></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout>Area of Rectangle - {areaOfRectangle}</lightning-layout>
+        <lightning-layout>Area of Square - {areaOfSquare}</lightning-layout>
+    </lightning-card>   
+</template>

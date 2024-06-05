@@ -1,0 +1,18 @@
+<template>
+    <lightning-card>
+        <lightning-layout title = "Simple Interest calculator">
+            <lightning-layout-item >
+                <lightning-input label="Principal" value={principal} size =12  ></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item >
+                <lightning-input label="Rate" value={rate} size =12 ></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item >
+                <lightning-input label="Time" value={time} size =12  ></lightning-input>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+    <lightning-card>
+        <h1> Total amount after {time} with {rate} = {amount}</h1>
+    </lightning-card>
+</template>

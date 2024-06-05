@@ -1,0 +1,16 @@
+<template>
+ 
+        <lightning-card>
+            <template if:true={accounts}>
+                <template for:each={accounts} for:item="acc">
+                    <div key={acc.Id}>
+                        <p> Name : {acc.Name}</p>
+                        <p> Type : {acc.newType}</p>
+                        <p> oldType : {acc.Type}</p>
+                        <p> Industry : {acc.Industry} </p>
+                    </div>
+                </template>
+            </template>
+        </lightning-card>
+
+</template>

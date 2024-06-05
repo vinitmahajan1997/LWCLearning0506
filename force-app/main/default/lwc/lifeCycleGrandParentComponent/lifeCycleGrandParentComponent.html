@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Grandparent Component">    
+        <lightning-button label="Show Parent" onclick={handleClick}></lightning-button>
+        <template if:true={show}>
+            <c-life-cycle-parent-component>
+
+            </c-life-cycle-parent-component>
+        </template>
+    </lightning-card>
+</template>
